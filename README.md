@@ -1,6 +1,8 @@
 # Writer-ish: Emacs themes
 
-Two simple Emacs themes that aim to recreate the look of [iA Writer](https://ia.net/writer).
+Two simple Emacs themes that aim to recreate the look of [iA Writer](https://ia.net/writer). Very much a work in progress. 
+
+(Note: The now well-known Focus mode could be added by using something like [Focus](https://github.com/larstvei/Focus).)
 
 ## Origins
 
@@ -10,12 +12,15 @@ For a look even closer to the original, you may choose to install one of [the ty
 
 You can do with this what you want.
 
-## Pending
+## Screenshots
 
-The now well-known Focus mode could be added by using something like [Focus](https://github.com/larstvei/Focus). 
+### Light theme (writerish)
 
-The look of the mode-line is still not quite what I want. I may revisit that at some point.
+![][screenshots/light-one.png]
+![][screenshots/light-two.png]
 
-One of the colors used in the theme seems like a poor fit---I don't quite know what to use instead.
+### Dark theme (writerish-dark)
 
-Other things may need to change too. This is just a first try.
+![][screenshots/dark-one.png]
+![][screenshots/dark-two.png]
+
