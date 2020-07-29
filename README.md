@@ -14,6 +14,49 @@ You can do with this what you want.
 
 ## Screenshots
 
+The fonts used on the screenshots below are from the [Input](https://input.fontbureau.com) family. I use Input Mono throughout, except for the mode-line, where I use Input Mono Compressed.
+
+```elisp
+(set-face-attribute 'default nil :height 181  :font "Input" :weight 'regular)
+(set-face-attribute 'mode-line nil :font "Input Mono Compressed" :height 161 :weight 'regular)
+(set-face-attribute 'mode-line-inactive nil :font "Input Mono Compressed" :height 161 :weight 'regular)
+```
+
+For some reason, switching themes kept setting the font for the `mode-line` face to be the same as the one for `default`. So you may want to use the following to toggle between themes:
+
+```elisp
+(defun writerish/set-light ()
+  (interactive)
+  (disable-theme 'writerish-dark)
+  (load-theme 'writerish t)
+  (set-face-attribute 'mode-line nil :font "Input Mono Compressed" :height 161 :weight 'regular)
+  (set-face-attribute 'mode-line-inactive nil :font "Input Mono Compressed" :height 161 :weight 'regular)
+  )
+
+(defun writerish/set-dark ()
+  (interactive)
+  (disable-theme 'writerish)
+  (load-theme 'writerish-dark t)
+  (set-face-attribute 'mode-line nil :font "Input Mono Compressed" :height 161 :weight 'regular)
+  (set-face-attribute 'mode-line-inactive nil :font "Input Mono Compressed" :height 161 :weight 'regular)
+  )
+```
+
+
+Getting a comfortable line spacing while having the cursor look right required using a font with an adjustable line height. Input allows you to do that, so setting the line-height to 1.5x before downloading works with this:
+
+```elisp
+(setq-default line-spacing 0.15)
+```
+
+Finally, I believe the window divider is not yet set by the theme, but rather by this line in my config:
+
+```elisp
+(set-face-foreground 'window-divider (face-background 'header-line))
+```
+
+This may end up being part of the theme at some point.
+
 ### Light theme (writerish)
 
 ![](screenshots/light-one.png)
