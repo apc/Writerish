@@ -1,6 +1,6 @@
 # Writer-ish: Emacs themes
 
-Two simple Emacs themes that aim to recreate the look of [iA Writer](https://ia.net/writer). Very much a work in progress. 
+Two simple Emacs themes that aim to recreate the look of [iA Writer](https://ia.net/writer). Very much a work in progress.
 
 (Note: The now well-known Focus mode could be added by using something like [Focus](https://github.com/larstvei/Focus).)
 
@@ -16,11 +16,10 @@ You can do with this what you want.
 
 ### Light theme (writerish)
 
-![][screenshots/light-one.png]
-![][screenshots/light-two.png]
+![](screenshots/light-one.png)
+![](screenshots/light-two.png)
 
 ### Dark theme (writerish-dark)
 
-![][screenshots/dark-one.png]
-![][screenshots/dark-two.png]
-
+![](screenshots/dark-one.png)
+![](screenshots/dark-two.png)
