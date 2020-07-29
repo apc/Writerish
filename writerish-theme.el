@@ -147,6 +147,8 @@
    `(company-echo-common ((,class (:foreground ,bg :background ,red))))
    `(company-scrollbar-bg ((,class (:foreground ,bg-alt :background ,bg-alt))))
    `(company-scrollbar-fg ((,class (:foreground ,fg :background ,fg))))
+   `(company-preview ((,class (:foreground ,fg-alt :background ,bg-alt))))
+   `(company-preview-common ((,class (:foreground ,fg-dim :background ,bg))))
    `(company-template-field ((,class (:inherit region))))
    `(company-tooltip ((,class (:foreground ,fg :background ,bg-alt))))
    `(company-tooltip-annotation ((,class (:foreground ,dim))))
