@@ -364,7 +364,7 @@
    `(org-document-title ((,class (:foreground ,dim :weight bold))))
    `(org-done ((,class(:inherit org-level-1 :foreground ,dim))))
    `(org-drawer ((,class (:inherist unspecified :foreground ,dim))))
-   `(org-ellipsis ((,class (:inherit unspecified :foreground ,fg-alt))))
+   `(org-ellipsis ((,class (:inherit unspecified :foreground ,fg-dim))))
    `(org-footnote ((,class (:foreground ,fg :underline t))))
    `(org-formula ((,class (:foreground ,dim))))
    `(org-headline-done ((,class (:inherit org-level-1 :strike-through t))))
