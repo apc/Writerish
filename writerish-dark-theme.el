@@ -129,6 +129,7 @@
    `(whitespace-big-indent ((,class (:foreground ,bg :background ,red))))
    `(whitespace-line ((,class (:background ,bg))))
    `(whitespace-trailing ((,class (:foreground ,bg :background ,red))))
+   `(whitespace-space ((,class (:foreground ,bg-alt :background ,bg))))
 
    ;;; Packages
    ;; =============================================================================
