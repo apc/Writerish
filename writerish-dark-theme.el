@@ -177,6 +177,11 @@
    `(flycheck-info ((,class (:underline (:style wave :color ,accent)))))
    `(flycheck-warning ((,class (:underline (:style wave :color ,orange)))))
 
+   ;; => Frog-menu
+   `(frog-menu-posframe-background-face ((,class :background ,bg-hl)))
+   `(frog-menu-posframe-border-face ((,class :background ,dim)))
+   `(frog-menu-action-keybinding-face ((,class :inherit minibuffer-prompt)))
+
     ;; => Gnus
    `(gnus-header-content ((,class (:foreground ,dim :italic t))))
    `(gnus-header-from ((,class (:foreground ,dim))))
