@@ -15,7 +15,7 @@
 
 ;;;; Colors
 (let* ((class '((class color) (min-colors 89)))
-       (bg-hl     "#FEFEFE") ; bg-hl
+       (bg-hl     "#FFFFFF") ; bg-hl
 
        (bg       "#FAFAFA") ; main bg
        (fg       "#1A1A1A") ; main fg
