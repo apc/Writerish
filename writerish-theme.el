@@ -29,11 +29,11 @@
 
        (green    "#52802F") ; green
 
-       (orange   "#D2692B") ; orange
+       (orange   "#A66501") ; orange
 
-       (red      "#B80C09") ; red
+       (red      "#CB4718") ; red
 
-       (sym      "#9D6722") ; math
+       (sym      "#B85CAA") ; math
 
        (fg-dim   "#6D6D6D") ; fg-dim (Alternative: #A3A19F)
        )
