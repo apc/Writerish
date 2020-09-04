@@ -386,10 +386,10 @@
    `(org-level-8 ((,class (:inherit org-level-2))))
    `(org-link ((,class ( :foreground unspecified :inherit unspecified :underline t))))
    `(org-mode-line-clock ((,class (:foreground unspecified :background unspecified))))
-   `(org-mode-line-clock-overrun ((,class (:foreground ,orange))))
+   `(org-mode-line-clock-overrun ((,class (:foreground ,red))))
    `(org-priority ((,class(:inherit org-level-1 :foreground ,accent :weight normal))))
    `(org-scheduled ((,class (:foreground ,fg))))
-   `(org-scheduled-previously ((,class (:foreground ,orange))))
+   `(org-scheduled-previously ((,class (:foreground ,red))))
    `(org-scheduled-today ((,class (:foreground ,fg-alt))))
    `(org-sexp-date ((,class (:foreground ,dim))))
    `(org-special-keyword ((,class (:foreground ,accent))))
@@ -397,8 +397,8 @@
    `(org-tag ((,class(:inherit org-level-1 :foreground ,dim :weight normal))))
    `(org-time-grid ((,class (:foreground ,dim))))
    `(org-todo ((,class (:inherit org-level-1 :foreground ,fg))))
-   `(org-upcoming-deadline ((,class (:foreground ,orange))))
-   `(org-warning ((,class (:foreground ,orange))))
+   `(org-upcoming-deadline ((,class (:foreground ,red))))
+   `(org-warning ((,class (:foreground ,red))))
    `(org-verbatim ((,class (:inherit default))))
 
    ;; Org Pomodoro
