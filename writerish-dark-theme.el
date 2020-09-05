@@ -408,6 +408,9 @@
    `(org-pomodoro-mode-line-break ((,class (:foreground ,green :weight bold))))
    `(org-pomodoro-mode-line-overtime ((,class (:foreground ,red :weight bold))))
 
+   ;; Perspective
+   `(persp-selected-face ((,class (:foreground ,fg :weight normal))))
+
    ;; => Which key
    `(which-key-key-face ((,class (:foreground ,accent :weight bold))))))
 
