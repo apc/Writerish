@@ -33,7 +33,9 @@
 
        (red       "#D15F36") ; red
 
-       (sym       "#BB8DB3") ; math
+       (magenta   "#BB8DB3")
+
+       (sym       "#1098F7") ; math
 
        (fg-dim    "#827979") ; fg-dim (Alternative: #A3A19F)
        )
