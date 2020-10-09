@@ -255,6 +255,11 @@
    `(ivy-minibuffer-match-face-3 ((,class (:inherit ivy-minibuffer-match-face-2 :underline t))))
    `(ivy-minibuffer-match-face-4 ((,class (:inherit ivy-minibuffer-match-face-2 :box nil))))
 
+   ;; => Ivy-posframe
+   `(ivy-posframe ((,class (:background ,bg-hl))))
+   `(ivy-posframe-border ((,class (:inherit ivy-posframe))))
+
+
    ;; => LaTeX
    `(font-latex-sectioning-0-face ((,class (:inherit default))))
    `(font-latex-sectioning-1-face ((,class (:inherit font-latex-sectioning-0-face))))
