@@ -380,7 +380,7 @@
    `(org-ellipsis ((,class (:inherit unspecified :foreground ,fg-dim))))
    `(org-footnote ((,class (:foreground ,fg :underline t))))
    `(org-formula ((,class (:foreground ,dim))))
-   `(org-headline-done ((,class (:inherit org-level-1 :strike-through t))))
+   `(org-headline-done ((,class (:foreground ,dim :strike-through nil))))
    `(org-hide ((,class (:foreground ,bg))))
    `(org-latex-and-related ((,class (:foreground ,dim))))
    `(org-level-1 ((,class (:foreground ,fg :weight bold))))
