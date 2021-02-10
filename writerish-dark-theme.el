@@ -162,6 +162,11 @@
    `(company-tooltip-search-selection ((,class (:inherit company-tooltip-search))))
    `(company-tooltip-selection ((,class (:background ,dim-alt))))
 
+   ;; => Company-posframe
+   `(company-posframe-active-backend-name ((,class :background ,bg :foreground ,accent)))
+   `(company-posframe-inactive-backend-name ((,class :background ,bg :foreground ,dim)))
+   `(company-posframe-metadata ((,class :background ,bg :foreground ,fg-alt)))
+
    ;; => bm
    `(bm-face ((,class (:foreground ,accent :background ,bg))))
    `(bm-fringe-face ((,class (:inherit bm-face))))
