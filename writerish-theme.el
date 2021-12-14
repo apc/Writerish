@@ -107,7 +107,7 @@
    `(link-visited ((,class (:underline t))))
    `(match ((,class (:inherit isearch))))
    `(vertical-border ((,class (:background ,bg-alt :foreground ,bg-alt))))
-   `(window-divider ((,class (:foreground ,dim))))
+   `(window-divider ((,class (:foreground ,bg-alt))))
 
    `(message-cited-text ((,class (:inherit font-lock-comment-face))))
    `(message-header-cc ((,class (:foreground ,dim))))
