@@ -21,6 +21,8 @@
 
 ;;; Code:
 
+(require 'writerish-core)
+
 (deftheme writerish "A simple theme, based on the beautiful iA Writer app")
 
 ;;;; Colors
@@ -48,39 +50,42 @@
        (sym      "#1098F7") ; math
 
        (fg-dim   "#6D6D6D") ; fg-dim (Alternative: #A3A19F)
+       (base-weight 'light)
+       (bold-weight 'demibold)
        )
 
   (custom-theme-set-faces
    'writerish
 
-   ;;; Core
+;;;; Core
    ;; =============================================================================
-   ;; => Base
+;;;;; Base
    `(bold ((,class (:weight bold))))
    `(bold-italic ((,class (:weight bold :slant italic))))
    `(default ((,class (:foreground ,fg :background ,bg))))
    `(error ((,class (:foreground ,red))))
+   `(fixed-pitch ((,class (:family unspecified))))
    `(fixed-pitch-serif ((,class (:family unspecified))))
-   `(font-lock-builtin-face ((,class (:foreground ,accent :weight normal))))
-   `(font-lock-comment-face ((,class (:foreground ,dim :slant italic))))
+   `(font-lock-builtin-face ((,class (:foreground ,accent :weight ,base-weight))))
+   `(font-lock-comment-face ((,class (:foreground ,dim :slant normal))))
    `(font-lock-comment-delimiter-face ((,class (:foreground ,dim :slant italic))))
-   `(font-lock-constant-face ((,class (:foreground ,fg-alt :weight normal))))
+   `(font-lock-constant-face ((,class (:foreground ,fg-alt))))
    `(font-lock-doc-face ((,class (:inherit (font-lock-comment-face)))))
-   `(font-lock-function-name-face ((,class (:foreground ,fg :weight bold))))
-   `(font-lock-keyword-face ((,class (:foreground ,fg :weight bold))))
+   `(font-lock-function-name-face ((,class (:foreground ,fg :inherit bold))))
+   `(font-lock-keyword-face ((,class (:foreground ,fg :inherit bold))))
    `(font-lock-string-face ((,class (:foreground ,dim))))
    `(font-lock-type-face ((,class (:foreground ,fg))))
    `(font-lock-variable-name-face ((,class (:foreground ,fg))))
    `(font-lock-warning-face ((,class (:inherit warning))))
-   `(fringe ((,class (:inherit default))))
+   `(fringe ((,class (:weight ,base-weight))))
    `(shadow ((,class (:foreground ,dim))))
    `(warning ((,class (:foreground ,orange))))
 
-   ;; => Core UI
+;;;;; Core UI
    `(cursor ((,class (:background ,accent :inverse-video t))))
    `(custom-button ((,class (:background ,accent :foreground ,bg))))
-   `(custom-group-tag ((,class (:foreground ,accent :weight bold))))
-   `(custom-variable-tag ((,class (:foreground ,fg :weight bold))))
+   `(custom-group-tag ((,class (:foreground ,accent :inherit bold))))
+   `(custom-variable-tag ((,class (:foreground ,fg :inherit bold))))
    `(custom-visibility ((,class (:inherit link))))
    `(diff-added ((,class (:foreground ,green))))
    `(diff-context ((,class (:foreground ,dim))))
@@ -134,6 +139,7 @@
    `(outline-6 ((,class (:inherit outline-1))))
    `(outline-7 ((,class (:inherit outline-1))))
    `(outline-8 ((,class (:inherit outline-1))))
+   `(pulse-highlight-start-face ((,class :background ,dim-alt :extend t)))
    `(region ((,class (:background ,dim-alt))))
    `(secondary-selection ((,class (:background ,bg-alt :foreground ,fg))))
    `(show-paren-match ((,class (:inherit bold :foreground ,accent))))
