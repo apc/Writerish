@@ -11,6 +11,8 @@
 
 ;;; Code:
 
+(require 'writerish-core)
+
 (deftheme writerish-dark "A simple theme, based on the beautiful iA Writer app")
 
 ;;;; Colors
@@ -417,6 +419,9 @@
    `(org-pomodoro-mode-line ((,class (:foreground ,accent :weight bold))))
    `(org-pomodoro-mode-line-break ((,class (:foreground ,green :weight bold))))
    `(org-pomodoro-mode-line-overtime ((,class (:foreground ,red :weight bold))))
+
+;;;;; Outline-minor-mode
+   `(outline-minor-0 ((,class (:foreground ,fg :inherit bold :background ,bg))))
 
    ;; Perspective
    `(persp-selected-face ((,class (:foreground ,fg :weight normal))))
