@@ -73,7 +73,7 @@
    `(font-lock-doc-face ((,class (:inherit (font-lock-comment-face)))))
    `(font-lock-function-name-face ((,class (:foreground ,fg :inherit bold))))
    `(font-lock-keyword-face ((,class (:foreground ,fg :inherit bold))))
-   `(font-lock-string-face ((,class (:foreground ,dim))))
+   `(font-lock-string-face ((,class (:foreground ,fg-dim))))
    `(font-lock-type-face ((,class (:foreground ,fg))))
    `(font-lock-variable-name-face ((,class (:foreground ,fg))))
    `(font-lock-warning-face ((,class (:inherit warning))))
