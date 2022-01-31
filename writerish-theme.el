@@ -206,7 +206,7 @@
    `(frog-menu-border ((,class :background ,bg-alt)))
    `(frog-menu-action-keybinding-face ((,class :inherit minibuffer-prompt)))
 
- ;;;;; Gnus
+;;;;; Gnus
    `(gnus-header-content ((,class (:foreground ,dim :italic t))))
    `(gnus-header-from ((,class (:foreground ,dim))))
    `(gnus-header-name ((,class (:foreground ,dim :inherit bold))))
@@ -295,7 +295,7 @@
    `(font-latex-script-char-face ((,class (:foreground ,sym))))
    `(font-latex-string-face ((,class (:inherit font-lock-string-face))))
    `(font-latex-warning-face ((,class (:inherit font-lock-warning-face))))
-   `(font-latex-verbatim-face ((,class (:inherit bold :inherit default))))
+   `(font-latex-verbatim-face ((,class (:inherit bold))))
    `(TeX-error-description-error ((,class :inherit (error bold))))
    `(TeX-error-description-warning ((,class :inherit (warning bold))))
    `(TeX-error-description-said ((,class :inherit (success bold))))
@@ -424,7 +424,7 @@
    `(org-hide ((,class (:foreground ,bg))))
    `(org-latex-and-related ((,class (:foreground ,dim))))
    `(org-level-1 ((,class (:foreground ,fg :inherit bold))))
-   `(org-level-2 ((,class (:inherit (default org-level-1)))))
+   `(org-level-2 ((,class (:inherit org-level-1 :weight normal))))
    `(org-level-3 ((,class (:inherit org-level-2))))
    `(org-level-4 ((,class (:inherit org-level-2))))
    `(org-level-5 ((,class (:inherit org-level-2))))
@@ -434,21 +434,21 @@
    `(org-link ((,class ( :foreground unspecified :inherit unspecified :underline t))))
    `(org-mode-line-clock ((,class (:foreground unspecified :background unspecified))))
    `(org-mode-line-clock-overrun ((,class (:foreground ,red))))
-   `(org-priority ((,class(:inherit (default org-level-1) :foreground ,accent))))
+   `(org-priority ((,class(:inherit org-level-1 :foreground ,accent))))
    `(org-scheduled ((,class (:foreground ,fg))))
    `(org-scheduled-previously ((,class (:foreground ,fg))))
    `(org-scheduled-today ((,class (:foreground ,fg-alt))))
    `(org-sexp-date ((,class (:foreground ,dim))))
    `(org-special-keyword ((,class (:foreground ,accent))))
    `(org-table ((,class (:foreground ,fg))))
-   `(org-tag ((,class(:inherit (default org-level-1) :foreground ,dim))))
+   `(org-tag ((,class (:foreground ,dim))))
    `(org-time-grid ((,class (:foreground ,dim))))
    `(org-todo ((,class (:inherit org-level-1 :foreground ,fg))))
    `(org-upcoming-deadline ((,class (:foreground ,red))))
    `(org-warning ((,class (:foreground ,red))))
    `(org-verbatim ((,class (:weight ,base-weight))))
 
-   ;; Org Pomodoro
+;;;;;; Org Pomodoro
    `(org-pomodoro-mode-line ((,class (:foreground ,accent :inherit bold))))
    `(org-pomodoro-mode-line-break ((,class (:foreground ,green :inherit bold))))
    `(org-pomodoro-mode-line-overtime ((,class (:foreground ,red :inherit bold))))
