@@ -283,6 +283,7 @@
    `(font-latex-italic-face ((,class (:weight ,base-weight :slant italic))))
    `(font-latex-math-face ((,class (:foreground ,sym))))
    `(font-latex-script-char-face ((,class (:foreground ,sym))))
+   `(font-latex-slide-title-face ((,class (:inherit font-latex-sectioning-0-face))))
    `(font-latex-string-face ((,class (:inherit font-lock-string-face))))
    `(font-latex-warning-face ((,class (:inherit font-lock-warning-face))))
    `(font-latex-verbatim-face ((,class (:inherit bold))))
