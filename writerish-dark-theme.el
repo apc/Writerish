@@ -261,7 +261,6 @@
    `(indent-guide-face ((,class (:foreground ,dim))))
 
    ;;;;; Imenu-list
-   ;;;;; imenu-list
    `(imenu-list-entry-face-0 ((,class :foreground ,fg)))
    `(imenu-list-entry-face-0 ((,class :foreground ,fg)))
    `(imenu-list-entry-face-1 ((,class :foreground ,fg)))
