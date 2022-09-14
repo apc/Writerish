@@ -257,6 +257,21 @@
 ;;;;; Indent guide
    `(indent-guide-face ((,class (:foreground ,dim))))
 
+;;;;; Indent guide
+   `(indent-guide-face ((,class (:foreground ,dim))))
+
+   ;;;;; Imenu-list
+   ;;;;; imenu-list
+   `(imenu-list-entry-face-0 ((,class :foreground ,fg)))
+   `(imenu-list-entry-face-0 ((,class :foreground ,fg)))
+   `(imenu-list-entry-face-1 ((,class :foreground ,fg)))
+   `(imenu-list-entry-face-2 ((,class :foreground ,fg)))
+   `(imenu-list-entry-face-3 ((,class :foreground ,fg)))
+   `(imenu-list-entry-subalist-face-0 ((,class :inherit org-level-1)))
+   `(imenu-list-entry-subalist-face-1 ((,class :inherit org-level-2)))
+   `(imenu-list-entry-subalist-face-2 ((,class :inherit org-level-3)))
+   `(imenu-list-entry-subalist-face-3 ((,class :inherit org-level-4)))
+
 ;;;;; Ivy
    `(ivy-confirm-face ((,class (:foreground ,green :inherit bold))))
    `(ivy-current-match ((,class (:inherit highlight))))
