@@ -126,7 +126,7 @@
    `(message-separator ((,class (:inherit font-lock-comment-face))))
 
    `(minibuffer-prompt ((,class (:foreground ,fg-alt :inherit bold))))
-   `(mode-line ((,class (:foreground ,fg :background ,bg-alt :box ,bg-alt))))
+   `(mode-line ((,class (:foreground ,fg :background ,bg-alt :box (:line-width 5 :color,bg-alt)))))
    `(mode-line-buffer-id ((,class (:foreground ,fg-alt :distant-foreground ,bg-alt))))
    `(mode-line-highlight ((,class (:inherit highlight :background unspecified))))
    `(mode-line-emphasis ((,class (:inherit highlight :background unspecified))))
