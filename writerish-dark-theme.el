@@ -116,7 +116,7 @@
    `(message-separator ((,class (:inherit font-lock-comment-face))))
 
    `(minibuffer-prompt ((,class (:foreground ,fg-alt :inherit bold))))
-   `(mode-line ((,class (:foreground ,fg :background ,bg-alt :box ,bg-alt))))
+   `(mode-line ((,class (:foreground ,fg :background ,bg-alt :box (:line-width 1 :color,bg-alt)))))
    `(mode-line-buffer-id ((,class (:foreground ,fg-alt :distant-foreground ,bg-alt))))
    `(mode-line-highlight ((,class (:inherit highlight :background unspecified))))
    `(mode-line-emphasis ((,class (:inherit highlight :background unspecified))))
@@ -413,7 +413,7 @@
    `(org-agenda-structure ((,class (:foreground ,fg :inherit bold :height 1.0))))
    `(org-block ((,class (:inherit fg))))
    `(org-clock-overlay ((,class (:inherit secondary-selection))))
-   ;; `(org-code ((, class (:inherit normal))))
+   `(org-code ((, class (:weight ,base-weight :box (:line-width (1 . -1) :color ,dim) :background ,bg-alt))))
    `(org-column ((,class (:foreground ,dim :slant normal))))
    `(org-column-title ((,class (:foreground ,fg :inherit bold))))
    `(org-date ((,class (:foreground ,fg))))
@@ -451,7 +451,7 @@
    `(org-todo ((,class (:inherit org-level-1 :foreground ,fg))))
    `(org-upcoming-deadline ((,class (:foreground ,red))))
    `(org-warning ((,class (:foreground ,red))))
-   `(org-verbatim ((,class (:weight ,base-weight))))
+   `(org-verbatim ((,class (:inherit ,org-code))))
 
 ;;;;;; Org Pomodoro
    `(org-pomodoro-mode-line ((,class (:foreground ,accent :inherit bold))))
