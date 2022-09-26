@@ -451,7 +451,7 @@
    `(org-todo ((,class (:inherit org-level-1 :foreground ,fg))))
    `(org-upcoming-deadline ((,class (:foreground ,red))))
    `(org-warning ((,class (:foreground ,red))))
-   `(org-verbatim ((,class (:inherit ,org-code))))
+   `(org-verbatim ((,class (:inherit org-code))))
 
 ;;;;;; Org Pomodoro
    `(org-pomodoro-mode-line ((,class (:foreground ,accent :inherit bold))))
