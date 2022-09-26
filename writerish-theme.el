@@ -421,7 +421,7 @@
    `(org-agenda-structure ((,class (:foreground ,fg :inherit bold :height 1.0))))
    `(org-block ((,class (:inherit fg))))
    `(org-clock-overlay ((,class (:inherit secondary-selection))))
-   `(`(org-code ((, class (:weight ,base-weight :box (:line-width (1 . -1) :color ,dim) :background ,bg-alt))))
+   `(org-code ((, class (:weight ,base-weight :box (:line-width (1 . -1) :color ,dim) :background ,bg-alt))))
    `(org-column ((,class (:foreground ,dim :slant normal))))
    `(org-column-title ((,class (:foreground ,fg :inherit bold))))
    `(org-date ((,class (:foreground ,fg))))
