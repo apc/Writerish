@@ -450,7 +450,7 @@
    `(org-sexp-date ((,class (:foreground ,dim))))
    `(org-special-keyword ((,class (:foreground ,accent))))
    `(org-table ((,class (:foreground ,fg))))
-   `(org-tag ((,class (:foreground ,dim))))
+   `(org-tag ((,class (:foreground ,dim :weight normal :height 0.9))))
    `(org-time-grid ((,class (:foreground ,dim))))
    `(org-todo ((,class (:inherit org-level-1 :foreground ,fg))))
    `(org-upcoming-deadline ((,class (:foreground ,red))))
