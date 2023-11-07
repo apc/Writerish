@@ -88,6 +88,7 @@
    `(diff-refine-removed ((,class (:foreground ,red))))
    `(diff-removed ((,class (:foreground ,red))))
    `(dired-directory ((,class :foreground ,fg :inherit bold)))
+   `(eshell-prompt ((,class :foreground ,accent :inherit bold)))
    `(header-line ((,class :foreground ,fg :inherit bold)))
    `(highlight ((,class (:background ,bg-alt))))
    `(hl-line ((,class (:background ,bg-hl))))
@@ -247,6 +248,9 @@
    `(helm-separator ((,class (:foreground ,fg))))
    `(helm-visible-mark ((,class (:background ,dim-alt))))
    `(helm-yas-key ((,class (:inherit helm-M-x-key))))
+
+;;;;; Help
+   `(help-for-help-header ((,class (:foreground ,fg :inherit bold))))
 
 ;;;;; Ido
    `(ido-indicator ((,class (:foreground ,bg :background ,red))))
