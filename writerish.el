@@ -1,4 +1,4 @@
-;;; writerish-core.el --- A simple theme based on the beautiful iA Writer app -*- lexical-binding: t; -*-
+;;; writerish.el --- A simple theme based on the beautiful iA Writer app -*- lexical-binding: t; -*-
 
 
 ;; Loosely adapted from Berrys Theme by Slava Buzin:
@@ -19,7 +19,7 @@
   :type 'symbol)
 
 
-(defun writerish-themes-theme (palette name)
+(defun writerish-themes--theme (palette name)
   "Define a variant named NAME using PALETTE."
     (let* ((class '((class color) (min-colors 89)))
            (bg-hl (plist-get palette :bg-hl)) ; bg-hl
@@ -469,40 +469,44 @@
 
 ;;;;; Which key
    `(which-key-key-face ((,class (:foreground ,accent :inherit bold)))))))
+;;; end definition of `writerish-themes-theme'
 
 ;;;###autoload
-    (defun writerish-themes-disable ()
-      "Disable Writerish themes"
-      (interactive)
-      (disable-theme 'writerish)
-      (disable-theme 'writerish-dark))
+(defun writerish-themes-disable ()
+  "Disable Writerish themes"
+  (interactive)
+  (disable-theme 'writerish)
+  (disable-theme 'writerish-dark))
 
 ;;;###autoload
-    (defun writerish-themes-load-style (style)
-      "Load Writerish theme variant STYLE.
+(defun writerish-themes-load-style (style)
+  "Load Writerish theme variant STYLE.
 
 Argument STYLE can be either \='light or \='dark."
-      ;; (interactive)
-      (cond ((equal style 'light)
-             (load-theme 'writerish t))
-            ((equal style 'dark)
-             (load-theme 'writerish-dark t))
-            (t (error (format "Unknown Writerish theme style: %S" style)))))
+  ;; (interactive)
+  (cond ((equal style 'light)
+         (load-theme 'writerish t))
+        ((equal style 'dark)
+         (load-theme 'writerish-dark t))
+        (t (error (format "Unknown Writerish theme style: %S" style)))))
 
 ;;;###autoload
-    (defun writerish-themes-switch-style ()
-      "Toggle between the light and dark style of Writerish theme."
-      (interactive)
-      (cond ((or (null writerish-themes-current-style)
-                 (equal writerish-themes-current-style 'dark))
-             (writerish-themes-load-style 'light)
-             (setq writerish-themes-current-style 'light))
-            ((equal writerish-themes-current-style 'light)
-             (writerish-themes-load-style 'dark)
-             (setq writerish-themes-current-style 'dark))
-            (t (error (format "Invalid Writerish current style: %S"
-                              writerish-themes-current-style)))))
-    (defun writerish-themes-load-default ()
+(defun writerish-themes-switch-style ()
+  "Toggle between the light and dark style of Writerish theme."
+  (interactive)
+  (cond ((or (null writerish-themes-current-style)
+             (equal writerish-themes-current-style 'dark))
+         (writerish-themes-load-style 'light)
+         (setq writerish-themes-current-style 'light))
+        ((equal writerish-themes-current-style 'light)
+         (writerish-themes-load-style 'dark)
+         (setq writerish-themes-current-style 'dark))
+        (t (error (format "Invalid Writerish current style: %S"
+                          writerish-themes-current-style)))))
+
+;;;###autoload
+(defun writerish-themes-load-default ()
+  "Load default theme variant, as specified by `writerish-themes-default-style'."
       (interactive)
       (cond ((equal writerish-themes-default-style 'light)
              (writerish-themes-load-style 'light)
@@ -513,8 +517,11 @@ Argument STYLE can be either \='light or \='dark."
             (t (error (format "Invalid Writerish current style: %S"
                               writerish-themes-current-style)))))
 
+;;;###autoload
+(when (and (boundp 'custom-theme-load-path) load-file-name)
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide 'writerish-core)
 
-
-;; writerish-core.el ends here
+(provide 'writerish)
+;; writerish.el ends here

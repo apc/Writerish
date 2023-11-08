@@ -11,7 +11,7 @@
 
 ;;; Code:
 
-(require 'writerish-core)
+(require 'writerish)
 
 (deftheme writerish-dark "A simple theme, based on the beautiful iA Writer app")
 
@@ -33,10 +33,10 @@
 
 (writerish-themes-theme writerish-dark-palette 'writerish-dark)
 
-;;;###autoload
-(when (and (boundp 'custom-theme-load-path) load-file-name)
-  (add-to-list 'custom-theme-load-path
-               (file-name-as-directory (file-name-directory load-file-name))))
+;; ;;;###autoload
+;; (when (and (boundp 'custom-theme-load-path) load-file-name)
+;;   (add-to-list 'custom-theme-load-path
+;;                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'writerish-dark)
 (provide 'writerish-dark-theme)

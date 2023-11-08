@@ -21,7 +21,7 @@
 
 ;;; Code:
 
-(require 'writerish-core)
+(require 'writerish)
 
 (deftheme writerish "A simple theme, based on the beautiful iA Writer app")
 
@@ -41,14 +41,14 @@
         :sym      "#1098F7" ; math
         :fg-dim   "#6D6D6D")) ; fg-dim (Alternative: #A3A19F
 
-(writerish-themes-theme writerish-light-palette 'writerish)
+(writerish-themes--theme writerish-light-palette 'writerish)
 
 
 
-;;;###autoload
-(when (and (boundp 'custom-theme-load-path) load-file-name)
-  (add-to-list 'custom-theme-load-path
-               (file-name-as-directory (file-name-directory load-file-name))))
+;; ;;;###autoload
+;; (when (and (boundp 'custom-theme-load-path) load-file-name)
+;;   (add-to-list 'custom-theme-load-path
+;;                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'writerish)
 (provide 'writerish-theme)
