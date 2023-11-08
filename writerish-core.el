@@ -15,7 +15,8 @@
 
 (defcustom writerish-themes-default-style 'light
   "Default theme for Writerish."
-  :group 'writerish)
+  :group 'writerish
+  :type 'symbol)
 
 
 (defun writerish-themes-theme (palette name)
@@ -480,7 +481,7 @@
     (defun writerish-themes-load-style (style)
       "Load Writerish theme variant STYLE.
 
-Argument STYLE can be either \'light or \'dark."
+Argument STYLE can be either \='light or \='dark."
       ;; (interactive)
       (cond ((equal style 'light)
              (load-theme 'writerish t))
