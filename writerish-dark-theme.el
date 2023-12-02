@@ -31,7 +31,7 @@
     :sym "#1098F7" ; math
     :fg-dim "#827979")) ; fg-dim (Alternative: #A3A19F)
 
-(writerish-themes-theme writerish-dark-palette 'writerish-dark)
+(writerish-themes--theme writerish-dark-palette 'writerish-dark)
 
 ;; ;;;###autoload
 ;; (when (and (boundp 'custom-theme-load-path) load-file-name)
